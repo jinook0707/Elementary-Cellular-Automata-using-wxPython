@@ -38,7 +38,7 @@ import wx.lib.scrolledpanel as SPanel
 import numpy as np
 
 DEBUG = False
-__version__ = 0.1
+__version__ = "0.1"
 
 #=======================================================================
 
@@ -86,8 +86,14 @@ class CellularAutomata1DFrame(wx.Frame):
         ##### end of setting up attributes -----
         
         ### init frame
-        wx.Frame.__init__(self, None, -1, "Elementary cellular automata", 
-                          pos = w_pos, size = self.w_sz) 
+        wx.Frame.__init__(
+                          self, 
+                          None, 
+                          -1, 
+                          "Elementary cellular automata v.%s"%(__version__), 
+                          pos = w_pos, 
+                          size = self.w_sz,
+                         ) 
         self.SetBackgroundColour('#333333')
         self.updateFrameSize()
 
