@@ -1,3 +1,12 @@
+""" Elementary cellular automata with Wolfram code.
+
+This program was coded and tested on Mac OSX 10.13.
+
+Dependency:
+    wxPython (4.0)
+    Numpy (1.17)
+"""
+
 import sys, queue
 from random import randint
 from threading import Thread
@@ -7,6 +16,7 @@ import wx.lib.scrolledpanel as SPanel
 import numpy as np
 
 DEBUG = False
+__version__ = 0.1
 
 #=======================================================================
 
